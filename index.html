@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+    </style>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        Faizan Ahmad
+    </nav>
+    <section id="home">
+        <div class="image">
+            <img src="./image.jpg" alt="">
+        </div>
+        <h1 class="name">Faizan Ahmad</h1>
+        <h2 class="so">S/o. Md. Raihan</h2>
+        <div class="abt">
+            <h2>I'm A : </h2>
+            <div class="txt">
+                <span id="f">Student</span>
+                <span id="s">Student</span>
+            </div>
+        </div>
+    </section>
+    <section id="edu">
+        <h1 class="title">I'm A Student of</h1>
+        <div class="item">
+            <div class="img"><img src="./js.jpg" alt=""></div>
+            <h1 class="name">Al-Jamiatus Salafiah</h1>
+            <p>Varanasi, U.P.</p>
+            <p>Alim1 to now And OnGoing</p>
+        </div>
+        <h1 class="title">I was A Student of</h1>
+        <div class="item">
+            <div class="img"><img src="./mahad.jpg" alt=""></div>
+            <h1 class="name">Al-Mahaul Islami As-Salafi</h1>
+            <p>Richha, Bareilly, U.P.</p>
+            <p>Mutawassita to Sanvia</p>
+        </div>
+    </section>
+    <section id="footer">
+        <div class="addr">
+            <h3>Address:</h3>
+            <p>Barhait, P.O. Barhait</p>
+            <p>P.S. Barhait, Dist: Sahibganj</p>
+            <p>Jharkhand 816102</p>
+        </div>
+        <a href="tel:919572243942" class="cont">Contact Me</a>
+        <p class="devby">Website Developed by Faizan Ahmad</p>
+    </section>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded',function(){
+        $ = id=> document.getElementById(id)
+        var roles = ['Student','Website Developper','Code Writer','Designer']
+        var span = [$('f'),$('s')];
+        span.forEach(s=>s.style.animationPlayState = "running")
+        var i = 1;
+        setInterval(() => {
+            span.forEach(s=>s.innerHTML = roles[i])
+            roles[i+1] ? i++ : i = 0;
+        }, 5000);
+    })
+</script>
+</html>

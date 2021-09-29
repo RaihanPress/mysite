@@ -1,0 +1,196 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'ubuntu',sans-serif;
+    box-sizing: border-box;
+    position: relative;
+}
+body *{
+    display: none;
+}
+body{
+    height: 100vh;
+    background: #2e3258;
+    padding: 20px;
+    text-align: center;
+    font-size: 2vw;
+}
+body::after{
+    color: #fff;
+    content: 'This site Is not Made to be Viewable on Desktop';
+}
+
+@media (max-width: 768px) {
+    
+body *{display: block;}
+script{
+    display: none;
+}
+body::after{content: none;}
+@font-face {
+    font-family: 'ubuntu';
+    src: url('./Ubuntu-Regular.ttf');
+}
+body{
+    min-height: 100vh;
+    height: auto;
+    background: none;
+    padding: 0;
+    text-align: unset;
+    font-size: unset;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    z-index: 5;
+}
+#home{
+    width: 100%;
+    background: linear-gradient(#fff4,#fff4), url('./bg.png') bottom left;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 70px 0;
+}
+#home .image{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: cyan;
+    border: 2px solid #fff;
+    box-shadow: 0 10px 15px #0005;
+    margin-bottom: 50px;
+}
+#home .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+#home h1.name{
+    margin: 10px 0;
+    font-size: 40px;
+    color: #0066ff;
+}
+#home h2.so{
+    color: #00f;
+}
+#home .abt{
+    width: 100%;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+#home .abt .txt {
+    align-self: center;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+}
+#home .abt .txt span{
+    margin: 10px 0;
+    width: 0;
+    height: 38px;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+#home .abt .txt span#f{
+    background: #2777e0;
+    color: transparent;
+    animation: width 5s ease infinite paused;
+}
+#home .abt .txt span#s{
+    background: #0099ff;
+    color: #fff;
+    animation: width 5s linear infinite paused;
+}
+@keyframes width {
+    0%,to{
+        padding: 10px 0;
+        width: 0;
+    }
+    10%,90%{
+        padding: 10px;
+        width: 200px;
+    }
+}
+
+
+#edu{
+    padding: 20px;
+    border-top: 1px solid #bbb;
+}
+#edu h1.title{
+    margin-top: 30px;
+    padding: 5px 15px;
+    border-left: 3px solid blue;
+}
+#edu .item{
+    margin: 10px 0;
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 2px;
+}
+#edu .item .img{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 10px;
+}
+#edu .item .img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#edu .item .name{
+    padding: 5px;
+}
+
+
+section#footer{
+    background: #2e3258;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+}
+section#footer .addr{
+    padding: 30px 20px;
+}
+section#footer .addr h3{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 28px;
+}
+section#footer .addr p{
+    font-size: 18px;
+    margin-bottom: 3px;
+}
+section#footer .cont{
+    width: 100%;
+    padding: 10px;
+    background: #25273a;
+    border-top: 2px solid #fff5;
+    border-bottom: 2px solid #fff5;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    transition: .3s;
+}
+section#footer .cont:hover{
+    letter-spacing: 2.5px;
+}
+section#footer .devby{
+    padding: 15px 5px;
+}
+    
+}
