@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eClass Code</title>
+    <link rel="stylesheet" href="../style.css">
+    <meta name="description" content="eClass Code for Adding Audio Skip Buttons. Click to Learn More.">
+</head>
+
+<body>
+    <nav>
+        <a href="/">Faizan Ahmad</a>
+        <select onchange="location.replace(this.value)">
+            <option value="/code">English</option>
+            <option value="/code/ur" selected>Urdu</option>
+        </select>
+    </nav>
+    <div id="home">
+        <h1>eClass Code - Urdu</h1>
+        <h2>Written by Faizan Ahmad</h2>
+        <div class="image">
+            <img src="../img/banner.png" alt="Screenshot of eClass page with buttons.">
+        </div>
+        <p>Kia Aap in Dono Buttons ko apne eClass me Add Karna Chahte Hain?</p>
+        <p>To Please in Steps ko follow karen.</p>
+        <br>
+        <h2>In Buttons ka Kia Kam Hai?</h2>
+        <p>Ye dono button Eclass ke Audio ko aage ya pichhe karne ke liye hain.</p>
+        <p>Pahla button audio ko das second pahle kar dega.</p>
+        <p>Aur dusra button audio ko das second aage kar dega.</p>
+        <br>
+        <h2>In Buttons ko install kaise karen?</h2>
+        <p>Niche diye gaye button par click karen!</p>
+        <button class="copy_btn" onclick="copyCode()">Code Copy karne ke liye Yaha click karen</button>
+        <p>Ab Upar Dahini Taraf &nearr; 3 dots &vellip;  par click karen</p>
+        <p>Agar Aap Chrome Use karte hain to &star; Star Button par click karen</p>
+        <div class="image"><img src="../img/star.jpg" alt=""></div>
+        <p>Aur Agar Aap Opera Mini Use karte hain to 'Add to Bookmarks' par click karen</p>
+        <div class="image"><img src="../img/bookm.jpg" alt=""></div>
+        <p>Agar Aap Chrome Use karte hain to niche Edit Button par click karen.</p>
+        <div class="image"><img src="../img/edit.jpg" alt=""></div>
+        <p>Jaha URL ya Address likha hai, uske niche <code>faizanahmad.tk/code</code> ko hata kar code paste kar den.</p>
+        <p>Jaha Name likha hai, uske niche koi ek letter likh den, Ab ye kuchh aisa hoga:</p>
+        <div class="image"><img src="../img/final.jpg" alt=""></div>
+        <p>Ab Sara kam Ho Chuka!</p>
+        <h2>In Buttons ko Istemal kaise Karen?</h2>
+        <p>Jab bhi Aap eClass me Koi Audio Kholen,</p>
+        <p>Upar URL par click karen,</p>
+        <p>Phir Aap ne 'Name' ki Jagah jo letter likha tha, use type karen</p>
+        <p>Wahi letter sab se niche aa raha hoga, sath hi uske niche ek blue line me <span>javascript:</span> wagairah likha hoga.</p>
+        <div class="image"><img src="../img/select.jpg" alt=""></div>
+        <p>Us par click kar den</p>
+        <p>Aap ka kam ho gaya!</p>
+        <p><b>Zaruri Bat:</b><br>Aap ko har bar audio kholte time us letter ko type karna hoga.</p>
+    </div>
+</body>
+<script>
+    function copyCode() {
+        navigator.clipboard.writeText(
+            `javascript:void((function(){var scr = document.createElement('script');scr.src="//https://www.faizanahmad.tk/code/code.js";document.body.appendChild(scr)})())`
+        )
+    }
+</script>
+
+</html>

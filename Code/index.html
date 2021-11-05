@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eClass Code</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <nav>
+        <a href="/">Faizan Ahmad</a>
+        <select onchange="location.replace(this.value)">
+            <option value="/code">English</option>
+            <option value="/code/ur">Urdu</option>
+        </select>
+    </nav>
+    <div id="home">
+        <h1>eClass Code - English</h1>
+        <h2>Written by Faizan Ahmad</h2>
+        <div class="image">
+            <img src="./img/banner.png" alt="Screenshot of eClass page with buttons.">
+        </div>
+        <p>Do You Want to Add these two buttons to Your eClass?</p>
+        <p>So Please Follow these Steps.</p>
+        <br>
+        <h1>What These Buttons do?</h1>
+        <p>These two buttons are for skipping audio.</p>
+        <p>The first button will back 10 seconds from the audio.</p>
+        <p>And The Second button will forward 10 seconds from the audio.</p>
+        <br>
+        <h1>How to Install These Buttons?</h1>
+        <p>Click the Copy Button</p>
+        <button class="copy_btn" onclick="copyCode()">Click Here to Copy Code</button>
+        <p>Now on the Top Right &nearr; Click on the &vellip; three dots </p>
+        <p>Click on the &star; Star Button in Chrome</p>
+        <div class="image"><img src="./img/star.jpg" alt=""></div>
+        <p>Click on Add to Bookmarks in Opera Mini</p>
+        <div class="image"><img src="./img/bookm.jpg" alt=""></div>
+        <p>In Chrome, Click the Edit Button on Bottom.</p>
+        <div class="image"><img src="./img/edit.jpg" alt=""></div>
+        <p>Under the URL/Address, remove <code>faizanahmad.tk/code</code> and paste the code.</p>
+        <p>Under the Name, Type Any Letter.</p>
+        <div class="image"><img src="./img/final.jpg" alt=""></div>
+        <p>Code is now Set Up!</p>
+        <h1>How to Use These Buttons?</h1>
+        <p>Every time you open Any Audio in eClass,</p>
+        <p>Click on the URL Bar.</p>
+        <p>Type the Letter you have Written as the Name</p>
+        <p>Your letter will be shown with a blue link starting with <span>javascript:</span></p>
+        <div class="image"><img src="./img/select.jpg" alt=""></div>
+        <p>Click on it</p>
+        <p>You Are all done!</p>
+        <p><b>Important:</b><br>You will have to re-type the name and re-select it every time you open any audio.</p>
+    </div>
+</body>
+<script>
+    function copyCode() {
+        navigator.clipboard.writeText(
+            `javascript:void((function(){var scr = document.createElement('script');scr.src="//https://www.faizanahmad.tk/code/code.js";document.body.appendChild(scr)})())`
+        )
+    }
+</script>
+
+</html>

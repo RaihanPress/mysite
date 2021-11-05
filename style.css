@@ -1,36 +1,14 @@
 
+@font-face {
+    font-family: 'ubuntu';
+    src: url('./Ubuntu-Regular.ttf');
+}
 *{
     margin: 0;
     padding: 0;
     font-family: 'ubuntu',sans-serif;
     box-sizing: border-box;
     position: relative;
-}
-body *{
-    display: none;
-}
-body{
-    height: 100vh;
-    background: #2e3258;
-    padding: 20px;
-    text-align: center;
-    font-size: 2vw;
-}
-body::after{
-    color: #fff;
-    content: 'This site Is not Made to be Viewable on Desktop';
-}
-
-@media (max-width: 768px) {
-    
-body *{display: block;}
-script{
-    display: none;
-}
-body::after{content: none;}
-@font-face {
-    font-family: 'ubuntu';
-    src: url('./Ubuntu-Regular.ttf');
 }
 body{
     min-height: 100vh;
@@ -39,6 +17,7 @@ body{
     padding: 0;
     text-align: unset;
     font-size: unset;
+    background: #f1f1f1;
 }
 nav{
     position: fixed;
@@ -51,12 +30,22 @@ nav{
 }
 #home{
     width: 100%;
-    background: linear-gradient(#fff4,#fff4), url('./bg.png') bottom left;
+    background: url('./bg.png') bottom left;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 100px 0 70px 0;
+}
+#home::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: -1;
 }
 #home .image{
     width: 150px;
@@ -125,10 +114,62 @@ nav{
     }
 }
 
+#projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+#projects .item{
+    margin: 20px 15px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+#projects .item a {
+    width: 100%;
+    color: #000;
+    text-decoration: none;
+}
+#projects .item a img{
+    width: 100%;
+    height: 180px;
+    image-rendering: optimizespeed;
+    transition: .3s;
+    border-radius: 5px;
+}
+#projects .item a[href]:hover img{
+    transform: scale(.95);
+}
+#projects .item a[href]:hover h1{
+    color: #7800c9;
+}
+#projects .item p{
+    padding: 10px;
+}
+#projects .item p::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    height: 1px;
+    background: #ccc;
+}
+#projects .item a[href]:hover ~ ::after{
+    background: #cc00ff;
+    background: linear-gradient(90deg,#cc00ff,magenta);
+    height: 2px;
+}
 
 #edu{
     padding: 20px;
     border-top: 1px solid #bbb;
+    background: #fff;
+    max-width: 600px;
+    margin: 0 auto;
 }
 #edu h1.title{
     margin-top: 30px;
@@ -193,4 +234,10 @@ section#footer .devby{
     padding: 15px 5px;
 }
     
+
+
+@media (min-width: 500px) {
+    #home .abt h2{
+        text-align: center;
+    }
 }

@@ -1,0 +1,104 @@
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url('../Ubuntu-Regular.ttf');
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'ubuntu',sans-serif;
+    box-sizing: border-box;
+    position: relative;
+}
+body{
+    min-height: 100vh;
+    height: auto;
+    background: none;
+    padding: 0;
+    text-align: unset;
+    font-size: unset;
+    background: #f1f1f1;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    border-bottom: 1px solid #ddd;
+    background: #fff;
+    z-index: 5;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#home{
+    max-width: 768px;
+    padding-top: 50px;
+    margin: auto;
+}
+#home h1, #home h2{
+    color: #ae00ff;
+    text-align: center;
+}
+/* #home h1::before,
+#home h2::before{
+    mix-blend-mode: hue;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#ff006a,#ae00ff);
+    position: absolute;
+    left: 0;
+} */
+#home h1{
+    margin: 10px 0;
+}
+#home h2{
+    margin: 5px 0;
+}
+#home .image{
+    width: 100%;
+    padding: 10px;
+}
+#home .image img{
+    width: 100%;
+    max-width: 400px;
+    /* max-height: 70vh; */
+    image-rendering: optimizeQuality;
+    pointer-events: none;
+}
+#home p{
+    margin: 10px;
+    margin-bottom: 20px;
+    font-size: 22px;
+    line-height: 30px;
+}
+#home p code{
+    padding: 3px;
+    background: #444;
+    color: #fff;
+    border-radius: 2px;
+}
+#home p span{
+    color: blue;
+    font-family: monospace;
+}
+#home button.copy_btn{
+    width: 100%;
+    max-width: 400px;
+    padding: 15px 5px;
+    border: none;
+    outline: none;
+    background: #01941a;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+#home button.copy_btn:hover{
+    background: #005c0f;
+}
+
+/* Responsive */
+@media (max-width: 250px) {
+}
