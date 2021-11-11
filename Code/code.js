@@ -1,3 +1,1 @@
-(function(){
-    
-})
+void((function() {$= el=> document.querySelector(el);if(!$('audio')){alert("No Audio"); return;} if(window['hasBtn']){alert("Already Exists"); return;}function aa(t, s) {btn = document.createElement('button');btn.classList = "btn btn-border border m-2";btn.innerHTML = t;r = $('.resourcecontent');if(!r){r = $('#intro .no-overflow')};r.appendChild(btn);btn.addEventListener('click', () => {document.querySelector('audio').currentTime += s});};aa("<<10s", -10);aa("10s>>", 10); window['hasBtn']=true})());
