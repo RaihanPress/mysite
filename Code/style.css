@@ -98,6 +98,7 @@ nav{
 #home button.copy_btn:hover{
     background: #005c0f;
 }
+#home .video,
 #home .video iframe{
     width: 100%;
 }
