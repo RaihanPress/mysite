@@ -98,7 +98,9 @@ nav{
 #home button.copy_btn:hover{
     background: #005c0f;
 }
-
+#home .video iframe{
+    width: 100%;
+}
 /* Responsive */
 @media (max-width: 250px) {
 }
