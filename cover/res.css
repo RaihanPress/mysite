@@ -1,0 +1,42 @@
+@media (max-width: 900px) {
+    section#home .txt .h1{
+        font-size: 40px;
+    }
+    section#home .txt .h3{
+        font-size: 20px;
+    }
+    section#home .img img{
+        height: 250px;
+    }
+    section#home .bg {
+        height: 350px;
+    }
+}
+@media (max-width: 600px) {
+    section#home {
+        flex-direction: column;
+    }
+    section#home .txt{
+        width: 100%;
+    }
+    section#home .img{
+        margin: 60px 0;
+    }
+}
+@media (max-width: 530px) {
+    section#samp h1{
+        font-size: 30px;
+    }
+    section#samp .smp .img{
+        width: 130px;
+        margin: 10px;
+    }
+}
+@media (max-width: 300px) {
+    section#home .txt .h1{
+        font-size: 40px;
+    }
+    section#home .txt .h3{
+        font-size: 15px;
+    }
+}
